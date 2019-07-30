@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Suite1]">
+  <parameter name="Browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.imaginea.amazontask.RetryListener"/>
+  </listeners>
+  <test thread-count="3" name="SampleTest(failed)">
+    <classes>
+      <class name="com.imaginea.amazontask.Profile">
+        <methods>
+          <include name="properties"/>
+          <include name="logout"/>
+          <include name="address"/>
+          <include name="yourAccount"/>
+        </methods>
+      </class> <!-- com.imaginea.amazontask.Profile -->
+    </classes>
+  </test> <!-- SampleTest(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

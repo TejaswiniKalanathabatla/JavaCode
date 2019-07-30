@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite1"   preserve-order="true" thread-count="3" > 
+<parameter name= "Browser" value = "chrome"/>
+	<test name="SampleTest">
+	<listeners>
+        <listener class-name="com.imaginea.amazontask.RetryListener"/>
+  </listeners>
+	
+	
+		<classes>
+			    <class name="com.imaginea.amazontask.Registration" /> 
+				     <class name="com.imaginea.amazontask.Retry" />
+			        <class name="com.imaginea.amazontask.Profile" />  
+			      
+			  	   
+		</classes>
+	</test>
+	
+</suite>
